@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class Personagem
+public class Personagem :MonoBehaviour
 {
     // Atributos básicos
     public string nome;

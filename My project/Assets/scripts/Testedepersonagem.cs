@@ -4,33 +4,33 @@ using UnityEngine;
 
 public class TestePersonagem : MonoBehaviour
 {
-    public Guerreiro guerreiro1;
-    public Guerreiro guerreiro2;
+    public Caçador caçador1;
+    public Caçador caçador2;
 
     void Start()
     {
-        // Inicializando dados
-        guerreiro1 = new Guerreiro();
-        guerreiro1.SetNome("Arthur");
-        guerreiro1.SetNivel(5);
-        guerreiro1.SetForca(20);
-        guerreiro1.SetVida(100);
-        guerreiro1.SetArma("Espada Longa");
+   
+        caçador1 = new Caçador();
+        caçador1.SetNome("Arthur");
+        caçador1.SetNivel(5);
+        caçador1.SetForca(20);
+        caçador1.SetVida(100);
+        caçador1.SetArma("Espada Longa");
 
-        guerreiro2 = new Guerreiro();
-        guerreiro2.SetNome("Lancelot");
-        guerreiro2.SetNivel(4);
-        guerreiro2.SetForca(18);
-        guerreiro2.SetVida(95);
-        guerreiro2.SetArma("Machado de Guerra");
+        caçador2 = new Caçador();
+        caçador2.SetNome("Lancelot");
+        caçador2.SetNivel(4);
+        caçador2.SetForca(18);
+        caçador2.SetVida(95);
+        caçador2.SetArma("Machado de Guerra");
 
-        // Testando métodos
-        Debug.Log($"Personagem 1: {guerreiro1.GetNome()}, Força: {guerreiro1.GetForca()}, Arma: {guerreiro1.GetArma()}");
-        Debug.Log($"Personagem 2: {guerreiro2.GetNome()}, Força: {guerreiro2.GetForca()}, Arma: {guerreiro2.GetArma()}");
+        
+        Debug.Log($"Personagem 1: {caçador1.GetNome()}, Força: {caçador1.GetForca()}, Arma: {caçador1.GetArma()}");
+        Debug.Log($"Personagem 2: {caçador2.GetNome()}, Força: {caçador2.GetForca()}, Arma: {caçador1.GetArma()}");
 
-        Debug.Log(guerreiro1.CompararForca(guerreiro2));
+        Debug.Log(caçador1.CompararForca(caçador2));
 
-        guerreiro1.Atacar();
-        guerreiro2.Atacar();
+        caçador1.Atacar();
+        caçador2.Atacar();
     }
 }
